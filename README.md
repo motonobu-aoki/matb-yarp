@@ -51,7 +51,7 @@ To convert an XML file to a JSON file, for example, you can use the following we
 
 https://codebeautify.org/xmltojson
 
-Of course, you may also create a JSON file directly by referring to a JSON file stored in the following folder.
+You may also create a JSON file directly by referring to a JSON file stored in the following folder.
 
 https://github.com/motonobu-aoki/matb-yarp/tree/main/app/matb
 
