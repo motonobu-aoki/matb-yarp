@@ -5,8 +5,6 @@ Multi Attribute Task Battery for YARP.
 MATB-YARP includes system monitoring task, tracking task, communications task, and resource management task. The basic structure is the same as MATB.
 In conjunction with YARP, data can be recorded on MATB performance performed by participants with various external signals, such as the iCub.
 
-![MATB-YARP](https://github.com/motonobu-aoki/matb-yarp/blob/main/images/MATB-YARP.png)
-
 #
 ##### MATB(Multi attribute task battery)
 
@@ -28,17 +26,19 @@ sudo apt install libsdl1.2-dev
 ````
 
 #
-###To launch MATB-YARP
+### To launch MATB-YARP
+![MATB-YARP](https://github.com/motonobu-aoki/matb-yarp/blob/main/images/MATB-YARP.png)
+
 In order to launch MATB-YARP, you need to execute Matb, MatbViewer, joystichCtrl and yarpdev and connect the necessary signals.
 To execute these in a simple way, you can use the yarp manager with an xml file.
 
 e.g. https://github.com/motonobu-aoki/matb-yarp/blob/main/app/yarp_manager/matb.xml
 #
-###To start the MATB-YARP
+### To start the MATB-YARP
 MATB starts by pressing "s" on the keyboard while the MATB Viewer window is active.
 
 #
-###Edit MATB events
+### Edit MATB events
 
 Using resource finder of YARP, you can specify the "event_json_file" to read a JSON file that defines the timings of the MATB events.
 The event timings are described in the JSON file. JSON event files can be converted XML files with the format described in the MATB-II user manual.
