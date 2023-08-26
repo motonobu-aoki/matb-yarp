@@ -5,7 +5,7 @@ Multi Attribute Task Battery for YARP.
 MATB-YARP includes system monitoring task, tracking task, communications task, and resource management task. The basic structure is the same as MATB.
 In conjunction with YARP, data can be recorded on MATB performance performed by participants with various external signals, such as the iCub.
 
-![MATB-YARP](https://github.com/motonobu-aoki/matb-yarp/tree/main/images)
+![MATB-YARP](https://github.com/motonobu-aoki/matb-yarp/blob/main/images/MATB-YARP.png)
 
 #
 ##### MATB(Multi attribute task battery)
