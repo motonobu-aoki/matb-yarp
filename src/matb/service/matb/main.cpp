@@ -16,12 +16,8 @@ int main(int argc, char* argv[])
     rf.setDefault("comm", "true");
     rf.setDefault("sched", "true");
     rf.setDefault("frequency", "30");
-//    rf.setDefault("condition", "non_social");
-//    std::string matb_path = getenv("YARP_INSTALL_DIR");
     std::string matb_path = getenv("ICUBcontrib_DIR");
     matb_path = matb_path + "/share/matb/json/matb_experiment.json";
-//   matb_path = matb_path + "/share/matb/json/matb_experiment_long.json";
-//   matb_path = matb_path + "/share/matb/matb/json/tracking_task.json";
     std::cout << matb_path << std::endl;
     rf.setDefault("matb_path", matb_path);
     rf.configure(argc, argv);

@@ -3,7 +3,14 @@ namespace matb
 {
     bool MatbModule::configure(yarp::os::ResourceFinder& _rf)
     {
-        std::cout << " --- " << std::endl;
+        period_ = 1.0 / _rf.find("frequency").asInt32();
+        resman_ = _rf.find("resman").asBool();
+        comm_ = _rf.find("comm").asBool();
+        sched_ = _rf.find("sched").asBool();
+        sysmon_ = _rf.find("sysmon").asBool();
+        track_ = _rf.find("track").asBool();
+        condition_ = _rf.find("condition").asString();
+        matb_path_ = _rf.find("matb_path").asString();
 
         MatbEventServer::init();
         MatbEventServer::parseMatbEventByJSON(_rf.find("matb_path").asString());
@@ -14,19 +21,6 @@ namespace matb
         experiment_window_elapsed_time_subscriber_port_.useCallback(experiment_window_elapsed_time_subscriber_);
         experiment_window_elapsed_time_subscriber_port_.setReplier(experiment_window_elapsed_time_subscriber_);
         experiment_window_elapsed_time_subscriber_port_.open("/" + _rf.find("name").asString() + "/experiment_controller/elapsed_time/sub");
-
-        period_ = 1.0 / _rf.find("frequency").asInt32();
-        resman_ = _rf.find("resman").asBool();
-        comm_ = _rf.find("comm").asBool();
-        sched_ = _rf.find("sched").asBool();
-        sysmon_ = _rf.find("sysmon").asBool();
-        track_ = _rf.find("track").asBool();
-        condition_ = _rf.find("condition").asString();
-
-//        if(condition_ == "non-social")
-//        {
-//            condition_ = "nonsocial";
-//        }
 
         if(resman_)
         {

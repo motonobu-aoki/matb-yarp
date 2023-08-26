@@ -39,58 +39,51 @@
 #include <yarp/rosmsg/std_msgs/Time.h>
 namespace matb
 {
-  class MatbModule : public yarp::os::RFModule
-  {
+    class MatbModule : public yarp::os::RFModule
+    {
     public:
-      double getPeriod() override;
-      bool updateModule() override;
-      bool configure( yarp::os::ResourceFinder& _rf ) override;
-      bool interruptModule() override;
-      bool close() override;
-      bool respond( const yarp::os::Bottle& command, yarp::os::Bottle& reply ) override;
-      void input();
-      void output();
+        double getPeriod() override;
+        bool updateModule() override;
+        bool configure(yarp::os::ResourceFinder& _rf) override;
+        bool interruptModule() override;
+        bool close() override;
+        bool respond(const yarp::os::Bottle& command, yarp::os::Bottle& reply) override;
+        void input();
+        void output();
     private:
-      void clockStart();
-      void checkClockStart();
-      void eventStart();
-      void eventStop();
-      void updateMatbEvent();
+        void clockStart();
+        void checkClockStart();
+        void eventStart();
+        void eventStop();
+        void updateMatbEvent();
 
-      bool resman_    = false;
-      bool sysmon_    = false;
-      bool track_     = false;
-      bool sched_     = false;
-      bool comm_      = false;
-      bool is_started = false;
-      std::string condition_ = "nonsocial";
-      
-      double frequency_ = 30.0;
-      double period_;
+        bool resman_ = false;
+        bool sysmon_ = false;
+        bool track_ = false;
+        bool sched_ = false;
+        bool comm_ = false;
+        bool is_started = false;
 
-      /* thread */
-      std::shared_ptr <CommunicationsTaskThread>             communications_task_thread;
-      std::shared_ptr <ResourceManagementTaskThread>         resource_management_task_thread;
-      std::shared_ptr <SchedulingDisplayThread>              scheduling_display_thread;
-      std::shared_ptr <SystemMonitoringTaskThread>           system_monitoring_task_thread;
-      std::shared_ptr <TrackingTaskThread>                   tracking_task_thread;
-      /* subscriber */
-      matb::YarpSubscriber <yarp::rosmsg::matb_msgs::QKey>   key_press_event_subscriber;
-      yarp::os::BufferedPort <yarp::rosmsg::matb_msgs::QKey> key_press_event_subscriber_port;
+        double frequency_ = 30.0;
+        double period_;
 
-      matb::YarpSubscriber< yarp::rosmsg::std_msgs::Time >   experiment_window_elapsed_time_subscriber_;
-      yarp::os::BufferedPort <yarp::rosmsg::std_msgs::Time>  experiment_window_elapsed_time_subscriber_port_;
-
-      std::deque <std::shared_ptr< SystemEvent >> events_;
-      //     MATBEventServer matb_event_server;
-
-      boost::property_tree::ptree p_tree;
-
-      yarp::rosmsg::matb_msgs::QKey key_press_event_;
-
-      std::string key_text_                 = "";
-      int         native_virtual_key_       = -1;
-      long int    last_key_press_time_stamp = 0;
-  };
+        /* thread */
+        std::shared_ptr <CommunicationsTaskThread> communications_task_thread;
+        std::shared_ptr <ResourceManagementTaskThread> resource_management_task_thread;
+        std::shared_ptr <SchedulingDisplayThread> scheduling_display_thread;
+        std::shared_ptr <SystemMonitoringTaskThread> system_monitoring_task_thread;
+        std::shared_ptr <TrackingTaskThread> tracking_task_thread;
+        /* subscriber */
+        matb::YarpSubscriber<yarp::rosmsg::matb_msgs::QKey> key_press_event_subscriber;
+        yarp::os::BufferedPort <yarp::rosmsg::matb_msgs::QKey> key_press_event_subscriber_port;
+        matb::YarpSubscriber<yarp::rosmsg::std_msgs::Time> experiment_window_elapsed_time_subscriber_;
+        yarp::os::BufferedPort <yarp::rosmsg::std_msgs::Time> experiment_window_elapsed_time_subscriber_port_;
+        std::deque <std::shared_ptr<SystemEvent >> events_;
+        boost::property_tree::ptree p_tree;
+        yarp::rosmsg::matb_msgs::QKey key_press_event_;
+        std::string key_text_ = "";
+        int native_virtual_key_ = -1;
+        long int last_key_press_time_stamp = 0;
+    };
 }
 
