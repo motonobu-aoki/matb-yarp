@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- Start Template File -->
+<!-- Created on 03-03-2009 -->
+<!-- Contains the templates for  cop y / paste /edit TRACK entries -->
+<!-- TRACK target update rate values: LOW, MEDIUM, HIGH -->
+<!-- TRACK joystick response values: LOW, MEDIUM, HIGH -->
+<!-- The TRACK task is controlled through SCHED entries -->
+<MATB-EVENTS>
+  <event startTime="0:00:00">
+    <!-- Start MATB Timer -->
+    <control>START</control>
+  </event>
+  <event startTime="0:00:05">
+    <!-- Start Tracking task: Edit update and response as required -->
+    <sched>
+      <task>TRACK</task>
+      <action>MANUAL</action>
+      <update>MEDIUM</update>
+      <response>MEDIUM</response>
+    </sched>
+  </event>
+  <event startTime="0:01:55">
+    <!-- Stop Tracking task -->
+    <sched>
+      <task>TRACK</task>
+      <action>AUTO</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:02:00">
+    <!-- Stop MATB Timer and end experiment -->
+    <control>END</control>
+  </event>
+  undefined
+
+</MATB-EVENTS>

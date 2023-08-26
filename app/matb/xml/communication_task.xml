@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- COMM Task Template File -->
+<!-- Created on 03-02-2009 -->
+<!-- Contains the templates to copy / paste /edit for the COMM task -->
+<!-- Includes the START / STOP control tags and COMM entries for the SCHED task -->
+<!-- The startTime= attribute and freq tag values will have to be edited -->
+<!-- 112.500 and 126.500 are the mid-frequencies for the NAV and COM radios -->
+<MATB-EVENTS>
+  <!-- Start MATB Timer -->
+  <event startTime="0:00:00">
+    <control>START</control>
+  </event>
+  <!-- Sched task: COMM START -->
+  <event startTime="0:00:05">
+    <sched>
+      <task>COMM</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- To play the OTHER_COM1_126-500.wav -->
+  <event startTime="0:00:30">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>COM1</radio>
+      <freq>126.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OTHER_COM2_126-500.wav -->
+  <event startTime="0:01:00">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>COM2</radio>
+      <freq>126.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OTHER_NAV1_112-500.wav -->
+  <event startTime="0:01:30">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>NAV1</radio>
+      <freq>112.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OTHER_NAV2_112-500.wav -->
+  <event startTime="0:02:00">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>NAV2</radio>
+      <freq>112.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OWN_COM1_126-500.wav -->
+  <event startTime="0:02:30">
+    <comm>
+      <ship>OWN</ship>
+      <radio>COM1</radio>
+      <freq>126.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OWN_COM2_126-500.wav -->
+  <event startTime="0:03:00">
+    <comm>
+      <ship>OWN</ship>
+      <radio>COM2</radio>
+      <freq>126.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OWN_NAV1_112-500.wav -->
+  <event startTime="0:03:30">
+    <comm>
+      <ship>OWN</ship>
+      <radio>NAV1</radio>
+      <freq>112.500</freq>
+    </comm>
+  </event>
+  <!-- To play the OWN_NAV2_112-500.wav -->
+  <event startTime="0:04:00">
+    <comm>
+      <ship>OWN</ship>
+      <radio>NAV2</radio>
+      <freq>112.500</freq>
+    </comm>
+  </event>
+  <!-- Sched task: COMM STOP -->
+  <event startTime="0:04:30">
+    <sched>
+      <task>COMM</task>
+      <action>STOP</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- Stop MATB Timer and end experiment -->
+  <event startTime="0:05:00">
+    <control>END</control>
+  </event>
+</MATB-EVENTS>

@@ -1,0 +1,12 @@
+int64 timestamp
+string text
+int32 count
+int32 key
+int32 type
+int32 modifiers
+int32 native_modifiers
+int32 native_scan_code
+int32 native_virtual_key
+bool is_auto_repeat
+bool is_accepted
+bool spontaneous

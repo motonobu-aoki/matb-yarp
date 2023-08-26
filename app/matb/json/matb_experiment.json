@@ -1,0 +1,395 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:05:01"
+      },
+          
+      {
+        "sched": {
+          "task": "RESMAN",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:01"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:01"
+      },
+      
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "STOP",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:05:00"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "MANUAL",
+          "update": "MEDIUM",
+          "response": "MEDIUM"
+        },
+        "_startTime": "0:00:01"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "AUTO",
+          "update": "MEDIUM",
+          "response": "MEDIUM"
+        },
+        "_startTime": "0:05:00"
+      },
+      
+      {
+        "resman": {
+          "fail": "P1",
+          "fix": "NONE"
+      },
+        "_startTime": "0:00:10"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P1"
+      },
+        "_startTime": "0:00:20"
+      },
+      {
+        "resman": {
+          "fail": "P2",
+          "fix": "NONE"
+      },
+        "_startTime": "0:00:30"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P2"
+      },
+        "_startTime": "0:00:40"
+      },
+      {
+        "resman": {
+          "fail": "P3",
+          "fix": "NONE"
+      },
+        "_startTime": "0:00:50"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P3"
+      },
+        "_startTime": "0:01:00"
+      },
+      {
+        "resman": {
+          "fail": "P4",
+          "fix": "NONE"
+      },
+        "_startTime": "0:01:10"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P4"
+      },
+        "_startTime": "0:01:20"
+      },
+      {
+        "resman": {
+          "fail": "P5",
+          "fix": "NONE"
+      },
+        "_startTime": "0:01:30"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P5"
+      },
+        "_startTime": "0:01:40"
+      },
+      {
+        "resman": {
+          "fail": "P6",
+          "fix": "NONE"
+      },
+        "_startTime": "0:01:50"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P6"
+      },
+        "_startTime": "0:02:00"
+      },
+      {
+        "resman": {
+          "fail": "P7",
+          "fix": "NONE"
+      },
+        "_startTime": "0:02:10"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P7"
+      },
+        "_startTime": "0:02:20"
+      },
+      {
+        "resman": {
+          "fail": "P8",
+          "fix": "NONE"
+      },
+        "_startTime": "0:02:30"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P8"
+      },
+        "_startTime": "0:02:40"
+      },
+      
+      {
+        "resman": {
+          "fail": "P1",
+          "fix": "NONE"
+      },
+        "_startTime": "0:02:50"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P1"
+      },
+        "_startTime": "0:03:00"
+      },
+      {
+        "resman": {
+          "fail": "P2",
+          "fix": "NONE"
+      },
+        "_startTime": "0:03:10"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P2"
+      },
+        "_startTime": "0:03:20"
+      },
+      {
+        "resman": {
+          "fail": "P3",
+          "fix": "NONE"
+      },
+        "_startTime": "0:03:30"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P3"
+      },
+        "_startTime": "0:03:40"
+      },
+      {
+        "resman": {
+          "fail": "P4",
+          "fix": "NONE"
+      },
+        "_startTime": "0:03:50"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P4"
+      },
+        "_startTime": "0:04:00"
+      },
+      {
+        "resman": {
+          "fail": "P5",
+          "fix": "NONE"
+      },
+        "_startTime": "0:04:10"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P5"
+      },
+        "_startTime": "0:04:20"
+      },
+      {
+        "resman": {
+          "fail": "P6",
+          "fix": "NONE"
+      },
+        "_startTime": "0:04:30"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P6"
+      },
+        "_startTime": "0:04:40"
+      },
+      {
+        "resman": {
+          "fail": "P7",
+          "fix": "NONE"
+      },
+        "_startTime": "0:04:50"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN"
+        },
+        "_startTime": "0:00:15"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:00:45"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:01:00"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "THREE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:01:15"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "RED"
+        },
+        "_startTime": "0:01:45"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN"
+        },
+        "_startTime": "0:02:00"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "FOUR",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:02:15"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "THREE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:02:45"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:03:00"
+      },
+      
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN"
+        },
+        "_startTime": "0:03:15"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:03:45"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:04:00"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "FOUR",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:04:15"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "NAV1",
+          "freq": "110.000"
+        },
+        "_startTime": "0:00:25"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM1",
+          "freq": "140.000"
+        },
+        "_startTime": "0:01:25"
+      },
+
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "NAV2",
+          "freq": "180.000"
+        },
+        "_startTime": "0:02:25"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM2",
+          "freq": "190.000"
+        },
+        "_startTime": "0:03:25"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "NAV1",
+          "freq": "100.000"
+        },
+        "_startTime": "0:04:25"
+      }
+    ]
+  }
+}

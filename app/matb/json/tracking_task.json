@@ -1,0 +1,33 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "MANUAL",
+          "update": "MEDIUM",
+          "response": "MEDIUM"
+        },
+        "_startTime": "0:00:05"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "AUTO",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:10"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:00:20"
+      }
+    ],
+    "__text": "undefined"
+  }
+}

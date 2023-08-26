@@ -1,0 +1,3 @@
+int64 elapsed_time
+sscr_msgs/Point2D point
+int64 out_of_track_elapsed_time

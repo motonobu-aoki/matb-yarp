@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- SYSMON Template File -->
+<!-- Created on 03-03-2009 -->
+<!-- Contains the templates to  copy / paste /edit SYSMON entries -->
+<!-- If both RESMAN and SYSMON task are active a single SCHED event will activate both -->
+<MATB-EVENTS>
+  <event startTime="0:00:00">
+    <!-- Start MATB Timer -->
+    <control>START</control>
+  </event>
+  <event startTime="0:00:01">
+    <!-- Start Resource Management and System Monitoring tasks  -->
+    <sched>
+      <task>RESSYS</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:00:02">
+    <!-- Start System Monitoring task  -->
+    <sched>
+      <task>SYSMON</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:00:13">
+    <!-- Turn The GREEN light, Normally ON to OFF -->
+    <sysmon>
+      <monitoringLightType>GREEN</monitoringLightType>
+    </sysmon>
+  </event>
+  <event startTime="0:00:23">
+    <!-- Turn The RED light, Normally OFF to ON -->
+    <sysmon>
+      <monitoringLightType>RED</monitoringLightType>
+    </sysmon>
+  </event>
+  <event startTime="0:00:33">
+    <!-- Move SCALE ONE DOWN -->
+    <sysmon>
+      <monitoringScaleNumber>ONE</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:00:43">
+    <!-- Move SCALE ONE UP -->
+    <sysmon>
+      <monitoringScaleNumber>ONE</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:00:53">
+    <!-- Move SCALE TWO DOWN -->
+    <sysmon>
+      <monitoringScaleNumber>TWO</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:01:03">
+    <!-- Move SCALE TWO UP -->
+    <sysmon>
+      <monitoringScaleNumber>TWO</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:01:13">
+    <!-- Move SCALE THREE DOWN -->
+    <sysmon>
+      <monitoringScaleNumber>THREE</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:01:23">
+    <!-- Move SCALE THREE UP -->
+    <sysmon>
+      <monitoringScaleNumber>THREE</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:01:33">
+    <!-- Move SCALE FOUR DOWN -->
+    <sysmon>
+      <monitoringScaleNumber>FOUR</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:01:43">
+    <!-- Move SCALE FOUR UP -->
+    <sysmon>
+      <monitoringScaleNumber>FOUR</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <event startTime="0:02:00">
+    <!-- Stop MATB Timer and end experiment -->
+    <control>END</control>
+  </event>
+</MATB-EVENTS>

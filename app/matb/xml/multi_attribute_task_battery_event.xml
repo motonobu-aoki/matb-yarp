@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- Modified on 01-21-2011 -->
+<!-- Sample 5 minute run with all four tasks and multi WRS questionnaire occurences -->
+<MATB-EVENTS>
+  <!-- CNTRL: Start MATB Timer -->
+  <event startTime="0:00:00">
+    <control>START</control>
+  </event>
+  <!-- SCHED: Start RESMAN & SYSMON Tasks -->
+  <event startTime="0:00:01">
+    <sched>
+      <task>RESSYS</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- SCHED: TRACK to Manual Mode -->
+  <event startTime="0:00:02">
+    <sched>
+      <task>TRACK</task>
+      <action>MANUAL</action>
+      <update>HIGH</update>
+      <response>MEDIUM</response>
+    </sched>
+  </event>
+  <!-- RESMAN: Fail pump 1 -->
+  <event startTime="0:00:05">
+    <resman>
+      <fail>P1</fail>
+      <fix>NONE</fix>
+    </resman>
+  </event>
+  <!-- SYSMON: Green Light OFF -->
+  <event startTime="0:00:08">
+    <sysmon activity="START">
+      <monitoringLightType>GREEN</monitoringLightType>
+    </sysmon>
+  </event>
+  <!-- SCHED: COMM Start Session -->
+  <event startTime="0:00:10">
+    <sched>
+      <task>COMM</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- COMM: OTHER Ship Freq Change -->
+  <event startTime="0:00:15">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>COM2</radio>
+      <freq>130.725</freq>
+    </comm>
+  </event>
+  <!-- SYSMON: Red Light ON -->
+  <event startTime="0:00:20">
+    <sysmon>
+      <monitoringLightType>RED</monitoringLightType>
+    </sysmon>
+  </event>
+  <!-- RESMAN: Fix pump 1 -->
+  <event startTime="0:00:35">
+    <resman>
+      <fail>NONE</fail>
+      <fix>P1</fix>
+    </resman>
+  </event>
+  <!-- SYSMON: SCALE ONE UP -->
+  <event startTime="0:00:38">
+    <sysmon>
+      <monitoringScaleNumber>ONE</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- COMM: OWN Ship Freq Change -->
+  <event startTime="0:00:40">
+    <comm>
+      <ship>OWN</ship>
+      <radio>COM1</radio>
+      <freq>127.550</freq>
+    </comm>
+  </event>
+  <!-- RESMAN: Fail pump 5 -->
+  <event startTime="0:00:45">
+    <resman>
+      <fail>P5</fail>
+      <fix>NONE</fix>
+    </resman>
+  </event>
+  <!-- SYSMON: Red Light ON -->
+  <event startTime="0:00:53">
+    <sysmon>
+      <monitoringLightType>RED</monitoringLightType>
+    </sysmon>
+  </event>
+  <!-- SYSMON: SCALE TWO DOWN -->
+  <event startTime="0:01:00">
+    <sysmon>
+      <monitoringScaleNumber>TWO</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- SYSMON: SCALE FOUR DOWN -->
+  <event startTime="0:01:10">
+    <sysmon>
+      <monitoringScaleNumber>FOUR</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- RESMAN: Fix pump 5 -->
+  <event startTime="0:01:15">
+    <resman>
+      <fail>NONE</fail>
+      <fix>P5</fix>
+    </resman>
+  </event>
+  <!-- COMM: OWN Ship Freq Change -->
+  <event startTime="0:01:20">
+    <comm>
+      <ship>OWN</ship>
+      <radio>COM2</radio>
+      <freq>126.475</freq>
+    </comm>
+  </event>
+  <!-- SYSMON: SCALE TWO UP -->
+  <event startTime="0:01:31">
+    <sysmon>
+      <monitoringScaleNumber>TWO</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- COMM: OWN Ship Freq Change -->
+  <event startTime="0:01:45">
+    <comm>
+      <ship>OWN</ship>
+      <radio>NAV1</radio>
+      <freq>111.600</freq>
+    </comm>
+  </event>
+  <!-- SCHED: TRACK to Automatic Response Mode -->
+  <event startTime="0:02:00">
+    <sched>
+      <task>TRACK</task>
+      <action>AUTO</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- SYSMON: Green Light OFF -->
+  <event startTime="0:02:10">
+    <sysmon activity="START">
+      <monitoringLightType>GREEN</monitoringLightType>
+    </sysmon>
+  </event>
+  <!-- COMM: OTHER Ship Freq Change -->
+  <event startTime="0:02:20">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>NAV2</radio>
+      <freq>115.050</freq>
+    </comm>
+  </event>
+  <!-- RESMAN: Fail pump 8 -->
+  <event startTime="0:02:20">
+    <resman>
+      <fail>P8</fail>
+      <fix>NONE</fix>
+    </resman>
+  </event>
+  <!-- SCHED: COMM Stop Session -->
+  <event startTime="0:02:30">
+    <sched>
+      <task>COMM</task>
+      <action>STOP</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- SYSMON: SCALE THREE UP -->
+  <event startTime="0:02:33">
+    <sysmon>
+      <monitoringScaleNumber>THREE</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- WRS questionnaire -->
+  <event startTime="0:02:40">
+    <wrs>START</wrs>
+  </event>
+  <!-- SCHED: TRACK to Manual Mode -->
+  <event startTime="0:02:45">
+    <sched>
+      <task>TRACK</task>
+      <action>MANUAL</action>
+      <update>MEDIUM</update>
+      <response>HIGH</response>
+    </sched>
+  </event>
+  <!-- RESMAN: Fix pump 8 -->
+  <event startTime="0:02:50">
+    <resman>
+      <fail>NONE</fail>
+      <fix>P8</fix>
+    </resman>
+  </event>
+  <!-- SYSMON: Red Light ON -->
+  <event startTime="0:02:53">
+    <sysmon>
+      <monitoringLightType>RED</monitoringLightType>
+    </sysmon>
+  </event>
+  <event startTime="0:03:05">
+    <sched>
+      <task>COMM</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- Start Communications task and make radio change -->
+  <event startTime="0:03:10">
+    <comm activity="START">
+      <ship>OWN</ship>
+      <radio>COM1</radio>
+      <freq>126.450</freq>
+    </comm>
+  </event>
+  <!-- RESMAN: Fail pump 2 -->
+  <event startTime="0:03:20">
+    <resman>
+      <fail>P2</fail>
+      <fix>NONE</fix>
+    </resman>
+  </event>
+  <!-- RESMAN: Fail pump 4 -->
+  <event startTime="0:03:20">
+    <resman>
+      <fail>P4</fail>
+      <fix>NONE</fix>
+    </resman>
+  </event>
+  <!-- SYSMON: SCALE ONE DOWN -->
+  <event startTime="0:03:23">
+    <sysmon>
+      <monitoringScaleNumber>ONE</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- COMM: OTHER Ship Freq Change -->
+  <event startTime="0:03:45">
+    <comm>
+      <ship>OTHER</ship>
+      <radio>COM2</radio>
+      <freq>120.775</freq>
+    </comm>
+  </event>
+  <!-- RESMAN: Fix pump 2 -->
+  <event startTime="0:03:50">
+    <resman>
+      <fail>NONE</fail>
+      <fix>P2</fix>
+    </resman>
+  </event>
+  <!-- RESMAN: Fix pump 4 -->
+  <event startTime="0:03:55">
+    <resman>
+      <fail>NONE</fail>
+      <fix>P4</fix>
+    </resman>
+  </event>
+  <!-- SCHED: TRACK to Automatic Response Mode -->
+  <event startTime="0:04:00">
+    <sched>
+      <task>TRACK</task>
+      <action>AUTO</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- RESMAN: Fail pump 3 -->
+  <event startTime="0:04:05">
+    <resman>
+      <fail>P3</fail>
+      <fix>NONE</fix>
+    </resman>
+  </event>
+  <!-- SYSMON: Green Light OFF -->
+  <event startTime="0:04:13">
+    <sysmon>
+      <monitoringLightType>GREEN</monitoringLightType>
+    </sysmon>
+  </event>
+  <!-- SYSMON: SCALE TWO DOWN -->
+  <event startTime="0:04:23">
+    <sysmon>
+      <monitoringScaleNumber>TWO</monitoringScaleNumber>
+      <monitoringScaleDirection>DOWN</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- SYSMON: Red Light ON -->
+  <event startTime="0:04:33">
+    <sysmon>
+      <monitoringLightType>RED</monitoringLightType>
+    </sysmon>
+  </event>
+
+  <event startTime="0:04:40">
+    <sched>
+      <task>COMM</task>
+      <action>STOP</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- SYSMON: SCALE ONE UP -->
+  <event startTime="0:04:41">
+    <sysmon>
+      <monitoringScaleNumber>ONE</monitoringScaleNumber>
+      <monitoringScaleDirection>UP</monitoringScaleDirection>
+    </sysmon>
+  </event>
+  <!-- WRS questionnaire -->
+  <event startTime="0:04:45">
+    <wrs>START</wrs>
+  </event>
+  <!-- RESMAN: Fix pump 3 -->
+  <event startTime="0:04:55">
+    <resman>
+      <fail>NONE</fail>
+      <fix>P3</fix>
+    </resman>
+  </event>
+  <!-- CNTRL: Stop MATB Timer & End Run -->
+  <event startTime="0:05:00">
+    <control>END</control>
+  </event>
+</MATB-EVENTS>

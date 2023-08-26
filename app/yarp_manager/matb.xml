@@ -1,0 +1,116 @@
+<application>
+  <name>matb</name>
+
+  <module>
+    <name>Matb</name>
+    <parameters>--sysmon true --tracking true --comm true --resman false </parameters>
+  </module>
+
+  <module>
+    <name>MatbViewer</name>
+  </module>
+
+  <module>
+    <name>joystickCtrl</name>
+  </module>
+
+  <!-- iSpeech -->
+  <module>
+    <name>yarpdev</name>
+    <parameters>--name matb --robot matb --device speech --lingware-context speech --default-language it-IT --pitch 100 --speed 80
+    </parameters>
+  </module>
+
+  <!-- connection -->
+  <!-- viewer -->
+  <connection>
+    <from>/matb/sysmon_task/image/pub</from>
+    <to>/matb_viewer/sysmon_task/image/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <connection>
+    <from>/matb/tracking_task/image/pub</from>
+    <to>/matb_viewer/tracking_task/image/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <connection>
+    <from>/matb/scheduling_display/image/pub</from>
+    <to>/matb_viewer/scheduling_display/image/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <connection>
+    <from>/matb/communications_task/image/pub</from>
+    <to>/matb_viewer/communications_task/image/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <connection>
+    <from>/matb/resman_task/image/pub</from>
+    <to>/matb_viewer/resman_task/image/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <connection>
+    <from>/matb/resman_task/pump_status/image/pub</from>
+    <to>/matb_viewer/pump_status/image/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <!-- connection -->
+
+  <!-- matb -->
+  <connection>
+    <from>/matb_viewer/key_press_event/pub</from>
+    <to>/matb/key_press_event/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <!-- tracking_task -->
+  <connection>
+    <from>/joystickCtrl/raw_axis:o</from>
+    <to>/matb/tracking_task/joystick_axis/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <!-- comm_task -->
+
+  <connection>
+    <from>/matb/communications_task/substruction/pub</from>
+    <to>/matb/speech:rpc</to>
+    <protocol>tcp</protocol>
+  </connection>
+  
+  <connection>
+    <from>/matb_viewer/key_press_event/pub</from>
+    <to>/matb/communications_task/key_press_event/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+  
+  <connection>
+    <from>/matb_viewer/key_release_event/pub</from>
+    <to>/matb/communications_task/key_release_event/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+  
+  <!-- resman_task -->
+
+  <connection>
+    <from>/matb_viewer/key_press_event/pub</from>
+    <to>/matb/resman_task/key_press_event/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <!-- sysmon_task -->
+
+  <connection>
+    <from>/matb_viewer/key_press_event/pub</from>
+    <to>/matb/sysmon_task/key_press_event/sub</to>
+    <protocol>tcp</protocol>
+  </connection>
+
+  <!-- pub -->
+  
+</application>

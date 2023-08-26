@@ -1,0 +1,5 @@
+add_subdirectory( communications_task_thread )
+add_subdirectory( resource_management_task_thread )
+add_subdirectory( scheduling_display_thread )
+add_subdirectory( system_monitoring_task_thread )
+add_subdirectory( tracking_task_thread )

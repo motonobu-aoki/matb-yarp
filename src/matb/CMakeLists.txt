@@ -1,0 +1,6 @@
+add_subdirectory( algorithm )
+add_subdirectory( thread )
+add_subdirectory( module )
+add_subdirectory( service )
+add_subdirectory( yarp_subscriber )
+add_subdirectory( Qt )

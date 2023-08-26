@@ -1,0 +1,77 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:01:00"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "STOP",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:03:00"
+      },
+      {
+        "sched": {
+          "task": "RESMAN",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:03:11"
+      },
+      {
+        "sched": {
+          "task": "RESSYS",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:03:21"
+      },
+      {
+        "sched": {
+          "task": "SYSMON",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:03:31"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "MANUAL",
+          "update": "MEDIUM",
+          "response": "MEDIUM"
+        },
+        "_startTime": "0:04:05"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "AUTO",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:04:35"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:05:00"
+      }
+    ]
+  }
+}

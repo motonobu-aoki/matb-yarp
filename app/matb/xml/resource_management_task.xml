@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- RESMAN Task Template File -->
+<!-- Created on 03-03-2009 -->
+<!-- Contains the templates for copy / paste /edit for the RESMAN task  -->
+<!-- Includes the START / STOP control tags and  RESMAN entries for the SCHED task -->
+<!-- The startTime= attribute and pump number tag values will have to be edited -->
+<!-- If both RESMAN and SYSMON task are active a single SCHED event will activate both -->
+<MATB-EVENTS>
+  <!-- Start MATB Timer -->
+  <event startTime="0:00:00">
+    <control>START</control>
+  </event>
+  <!-- Start both Resource Management and  System Monitoring tasks  -->
+  <event startTime="0:00:01">
+    <sched>
+      <task>RESSYS</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- Start Resource Management task  -->
+  <event startTime="0:00:02">
+    <sched>
+      <task>RESMAN</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <!-- Fail pump 1  -->
+  <event startTime="0:01:00">
+    <resman>
+      <fail>P1</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 1  -->
+  <event startTime="0:01:30">
+    <resman>
+      <fix>P1</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 2  -->
+  <event startTime="0:02:00">
+    <resman>
+      <fail>P2</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 2  -->
+  <event startTime="0:02:30">
+    <resman>
+      <fix>P2</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 3  -->
+  <event startTime="0:03:00">
+    <resman>
+      <fail>P3</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 3  -->
+  <event startTime="0:03:30">
+    <resman>
+      <fix>P3</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 4  -->
+  <event startTime="0:04:00">
+    <resman>
+      <fail>P4</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 4  -->
+  <event startTime="0:04:30">
+    <resman>
+      <fix>P4</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 5  -->
+  <event startTime="0:05:00">
+    <resman>
+      <fail>P5</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 5  -->
+  <event startTime="0:05:30">
+    <resman>
+      <fix>P5</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 6  -->
+  <event startTime="0:06:00">
+    <resman>
+      <fail>P6</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 6  -->
+  <event startTime="0:06:30">
+    <resman>
+      <fix>P6</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 7  -->
+  <event startTime="0:07:00">
+    <resman>
+      <fail>P7</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 7  -->
+  <event startTime="0:07:30">
+    <resman>
+      <fix>P7</fix>
+    </resman>
+  </event>
+  <!-- Fail pump 8  -->
+  <event startTime="0:08:00">
+    <resman>
+      <fail>P8</fail>
+    </resman>
+  </event>
+  <!-- Fix pump 8  -->
+  <event startTime="0:08:30">
+    <resman>
+      <fix>P8</fix>
+    </resman>
+  </event>
+  <!-- Stop MATB Timer and end experiment -->
+  <event startTime="0:09:00">
+    <control>END</control>
+  </event>
+</MATB-EVENTS>

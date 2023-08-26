@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- Start Template File -->
+<!-- Created on 03-02-2009 -->
+<!-- Contains the template to save as the initial file -->
+<!-- and then copy / paste /edit entries from other template files -->
+<!-- Since most runs will have at least one WRS event, it's template is included -->
+<MATB-EVENTS>
+  <!-- Start MATB Timer -->
+  <event startTime="0:00:00">
+    <control>START</control>
+  </event>
+  <!-- Workload Rating -->
+  <event startTime="0:01:00">
+    <wrs>START</wrs>
+  </event>
+  <!-- Stop MATB Timer and end experiment -->
+  <event startTime="0:02:00">
+    <control>END</control>
+  </event>
+</MATB-EVENTS>

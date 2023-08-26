@@ -1,0 +1,96 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:05"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "COM1",
+          "freq": "126.500"
+        },
+        "_startTime": "0:00:30"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "COM2",
+          "freq": "126.500"
+        },
+        "_startTime": "0:01:00"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "NAV1",
+          "freq": "112.500"
+        },
+        "_startTime": "0:01:30"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "NAV2",
+          "freq": "112.500"
+        },
+        "_startTime": "0:02:00"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM1",
+          "freq": "126.500"
+        },
+        "_startTime": "0:02:30"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM2",
+          "freq": "126.500"
+        },
+        "_startTime": "0:03:00"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "NAV1",
+          "freq": "112.500"
+        },
+        "_startTime": "0:03:30"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "NAV2",
+          "freq": "112.500"
+        },
+        "_startTime": "0:04:00"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "STOP",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:04:30"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:05:00"
+      }
+    ]
+  }
+}

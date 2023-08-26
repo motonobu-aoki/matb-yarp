@@ -1,0 +1,18 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "wrs": "START",
+        "_startTime": "0:01:00"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:02:00"
+      }
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Multi-Attribute Task Battery Events -->
+<!-- SCHED Template File -->
+<!-- Created on 03-03-2009 -->
+<!-- Contains the templates to  copy / paste /edit SCHED entries -->
+<!-- TRACK target update rate values: LOW, MEDIUM, HIGH -->
+<!-- TRACK joystick response values: LOW, MEDIUM, HIGH -->
+<MATB-EVENTS>
+  <event startTime="0:00:00">
+    <!-- Start MATB Timer -->
+    <control>START</control>
+  </event>
+  <event startTime="0:01:00">
+    <!-- Start Communications task  -->
+    <sched>
+      <task>COMM</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:03:00">
+    <!-- Stop Communications task   -->
+    <sched>
+      <task>COMM</task>
+      <action>STOP</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:03:11">
+    <!-- Start Resource Management task  -->
+    <sched>
+      <task>RESMAN</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:03:21">
+    <!-- Start Resource Management and System Monitoring tasks  -->
+    <sched>
+      <task>RESSYS</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:03:31">
+    <!-- Start System Monitoring task  -->
+    <sched>
+      <task>SYSMON</task>
+      <action>START</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:04:05">
+    <!-- Start Tracking task: Edit update and response as required -->
+    <sched>
+      <task>TRACK</task>
+      <action>MANUAL</action>
+      <update>MEDIUM</update>
+      <response>MEDIUM</response>
+    </sched>
+  </event>
+  <event startTime="0:04:35">
+    <!-- Stop Tracking task -->
+    <sched>
+      <task>TRACK</task>
+      <action>AUTO</action>
+      <update>NULL</update>
+      <response>NULL</response>
+    </sched>
+  </event>
+  <event startTime="0:05:00">
+    <!-- Stop MATB Timer and end experiment -->
+    <control>END</control>
+  </event>
+</MATB-EVENTS>

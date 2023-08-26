@@ -1,0 +1,100 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "sched": {
+          "task": "RESSYS",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:01"
+      },
+      {
+        "sched": {
+          "task": "SYSMON",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:02"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN"
+        },
+        "_startTime": "0:00:13"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "RED"
+        },
+        "_startTime": "0:00:23"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:00:33"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:00:43"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:00:53"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:01:03"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "THREE",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:01:13"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "THREE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:01:23"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "FOUR",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:01:33"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "FOUR",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:01:43"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:02:00"
+      }
+    ]
+  }
+}

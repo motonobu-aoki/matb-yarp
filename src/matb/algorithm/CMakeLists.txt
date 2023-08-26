@@ -1,0 +1,7 @@
+add_subdirectory( matb_event )
+add_subdirectory( matb_event_server )
+add_subdirectory( resource_management_task )
+add_subdirectory( system_monitoring_task )
+add_subdirectory( tracking_task )
+add_subdirectory( scheduling_display )
+add_subdirectory( communications_task )

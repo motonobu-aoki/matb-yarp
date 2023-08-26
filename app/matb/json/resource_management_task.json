@@ -1,0 +1,128 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "sched": {
+          "task": "RESSYS",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:01"
+      },
+      {
+        "sched": {
+          "task": "RESMAN",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:02"
+      },
+      {
+        "resman": {
+          "fail": "P1"
+        },
+        "_startTime": "0:01:00"
+      },
+      {
+        "resman": {
+          "fix": "P1"
+        },
+        "_startTime": "0:01:30"
+      },
+      {
+        "resman": {
+          "fail": "P2"
+        },
+        "_startTime": "0:02:00"
+      },
+      {
+        "resman": {
+          "fix": "P2"
+        },
+        "_startTime": "0:02:30"
+      },
+      {
+        "resman": {
+          "fail": "P3"
+        },
+        "_startTime": "0:03:00"
+      },
+      {
+        "resman": {
+          "fix": "P3"
+        },
+        "_startTime": "0:03:30"
+      },
+      {
+        "resman": {
+          "fail": "P4"
+        },
+        "_startTime": "0:04:00"
+      },
+      {
+        "resman": {
+          "fix": "P4"
+        },
+        "_startTime": "0:04:30"
+      },
+      {
+        "resman": {
+          "fail": "P5"
+        },
+        "_startTime": "0:05:00"
+      },
+      {
+        "resman": {
+          "fix": "P5"
+        },
+        "_startTime": "0:05:30"
+      },
+      {
+        "resman": {
+          "fail": "P6"
+        },
+        "_startTime": "0:06:00"
+      },
+      {
+        "resman": {
+          "fix": "P6"
+        },
+        "_startTime": "0:06:30"
+      },
+      {
+        "resman": {
+          "fail": "P7"
+        },
+        "_startTime": "0:07:00"
+      },
+      {
+        "resman": {
+          "fix": "P7"
+        },
+        "_startTime": "0:07:30"
+      },
+      {
+        "resman": {
+          "fail": "P8"
+        },
+        "_startTime": "0:08:00"
+      },
+      {
+        "resman": {
+          "fix": "P8"
+        },
+        "_startTime": "0:08:30"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:09:00"
+      }
+    ]
+  }
+}

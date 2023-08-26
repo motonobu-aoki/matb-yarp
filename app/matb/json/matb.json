@@ -1,0 +1,344 @@
+{
+  "MATB-EVENTS": {
+    "event": [
+      {
+        "control": "START",
+        "_startTime": "0:00:00"
+      },
+      {
+        "sched": {
+          "task": "RESSYS",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:01"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "MANUAL",
+          "update": "HIGH",
+          "response": "MEDIUM"
+        },
+        "_startTime": "0:00:02"
+      },
+      {
+        "resman": {
+          "fail": "P1",
+          "fix": "NONE"
+        },
+        "_startTime": "0:00:05"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN",
+          "_activity": "START"
+        },
+        "_startTime": "0:00:08"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:00:10"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "COM2",
+          "freq": "130.725"
+        },
+        "_startTime": "0:00:15"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "RED"
+        },
+        "_startTime": "0:00:20"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P1"
+        },
+        "_startTime": "0:00:35"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:00:38"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM1",
+          "freq": "127.550"
+        },
+        "_startTime": "0:00:40"
+      },
+      {
+        "resman": {
+          "fail": "P5",
+          "fix": "NONE"
+        },
+        "_startTime": "0:00:45"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "RED"
+        },
+        "_startTime": "0:00:53"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:01:00"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "FOUR",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:01:10"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P5"
+        },
+        "_startTime": "0:01:15"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM2",
+          "freq": "126.475"
+        },
+        "_startTime": "0:01:20"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:01:31"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "NAV1",
+          "freq": "111.600"
+        },
+        "_startTime": "0:01:45"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "AUTO",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:02:00"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN",
+          "_activity": "START"
+        },
+        "_startTime": "0:02:10"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "NAV2",
+          "freq": "115.050"
+        },
+        "_startTime": "0:02:20"
+      },
+      {
+        "resman": {
+          "fail": "P8",
+          "fix": "NONE"
+        },
+        "_startTime": "0:02:20"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "STOP",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:02:30"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "THREE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:02:33"
+      },
+      {
+        "wrs": "START",
+        "_startTime": "0:02:40"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "MANUAL",
+          "update": "MEDIUM",
+          "response": "HIGH"
+        },
+        "_startTime": "0:02:45"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P8"
+        },
+        "_startTime": "0:02:50"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "RED"
+        },
+        "_startTime": "0:02:53"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "START",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:03:05"
+      },
+      {
+        "comm": {
+          "ship": "OWN",
+          "radio": "COM1",
+          "freq": "126.450",
+          "_activity": "START"
+        },
+        "_startTime": "0:03:10"
+      },
+      {
+        "resman": {
+          "fail": "P2",
+          "fix": "NONE"
+        },
+        "_startTime": "0:03:20"
+      },
+      {
+        "resman": {
+          "fail": "P4",
+          "fix": "NONE"
+        },
+        "_startTime": "0:03:20"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:03:23"
+      },
+      {
+        "comm": {
+          "ship": "OTHER",
+          "radio": "COM2",
+          "freq": "120.775"
+        },
+        "_startTime": "0:03:45"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P2"
+        },
+        "_startTime": "0:03:50"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P4"
+        },
+        "_startTime": "0:03:55"
+      },
+      {
+        "sched": {
+          "task": "TRACK",
+          "action": "AUTO",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:04:00"
+      },
+      {
+        "resman": {
+          "fail": "P3",
+          "fix": "NONE"
+        },
+        "_startTime": "0:04:05"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "GREEN"
+        },
+        "_startTime": "0:04:13"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "TWO",
+          "monitoringScaleDirection": "DOWN"
+        },
+        "_startTime": "0:04:23"
+      },
+      {
+        "sysmon": {
+          "monitoringLightType": "RED"
+        },
+        "_startTime": "0:04:33"
+      },
+      {
+        "sched": {
+          "task": "COMM",
+          "action": "STOP",
+          "update": "NULL",
+          "response": "NULL"
+        },
+        "_startTime": "0:04:40"
+      },
+      {
+        "sysmon": {
+          "monitoringScaleNumber": "ONE",
+          "monitoringScaleDirection": "UP"
+        },
+        "_startTime": "0:04:41"
+      },
+      {
+        "wrs": "START",
+        "_startTime": "0:04:45"
+      },
+      {
+        "resman": {
+          "fail": "NONE",
+          "fix": "P3"
+        },
+        "_startTime": "0:04:55"
+      },
+      {
+        "control": "END",
+        "_startTime": "0:05:00"
+      }
+    ]
+  }
+}
