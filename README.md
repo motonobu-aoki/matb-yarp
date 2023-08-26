@@ -40,7 +40,7 @@ MATB starts by pressing "s" on the keyboard while the MATB Viewer window is acti
 #
 ### Edit MATB events
 
-Using resource finder of YARP, you can specify the "event_json_file" to read a JSON file that defines the timings of the MATB events.
+Using resource finder on YARP, you can specify the "event_json_file" to read a JSON file that defines the timings of the MATB events.
 The event timings are described in the JSON file. JSON event files can be converted XML files with the format described in the MATB-II user manual.
 
 ##### MATB-II User manual
