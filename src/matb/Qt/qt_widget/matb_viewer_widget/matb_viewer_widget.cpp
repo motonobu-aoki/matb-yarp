@@ -164,7 +164,7 @@ namespace matb
         auto resman_yarp_image = resman_image_subscriber_.bottle();
         if(resman_yarp_image.width() <= 0||resman_yarp_image.height() <= 0)
         {
-            std::cerr << "Received YARP image for resman is not valid!" << std::endl;
+//            std::cerr << "Received YARP image for resman is not valid!" << std::endl;
             resman_label_.setPixmap(QPixmap::fromImage(white_image).scaled(width_, height_));
         }
         else
@@ -182,7 +182,7 @@ namespace matb
         auto resman_status_yarp_image = resman_status_image_subscriber_.bottle();
         if(resman_status_yarp_image.width() <= 0||resman_status_yarp_image.height() <= 0)
         {
-            std::cerr << "Received YARP image for resman_status is not valid!" << std::endl;
+//            std::cerr << "Received YARP image for resman_status is not valid!" << std::endl;
             resman_status_label_.setPixmap(QPixmap::fromImage(white_image).scaled(width_, height_));
         }
         else
@@ -200,7 +200,7 @@ namespace matb
         auto sysmon_yarp_image = sysmon_image_subscriber_.bottle();
         if(sysmon_yarp_image.width() <= 0||sysmon_yarp_image.height() <= 0)
         {
-            std::cerr << "Received YARP image for sysmon is not valid!" << std::endl;
+//            std::cerr << "Received YARP image for sysmon is not valid!" << std::endl;
             sysmon_label_.setPixmap(QPixmap::fromImage(white_image).scaled(width_, height_));
         }
         else
@@ -218,7 +218,7 @@ namespace matb
         auto tracking_yarp_image = tracking_image_subscriber_.bottle();
         if(tracking_yarp_image.width() <= 0||tracking_yarp_image.height() <= 0)
         {
-            std::cerr << "Received YARP image for tracking is not valid!" << std::endl;
+//            std::cerr << "Received YARP image for tracking is not valid!" << std::endl;
             tracking_label_.setPixmap(QPixmap::fromImage(white_image).scaled(width_, height_));
         }
         else
@@ -236,7 +236,7 @@ namespace matb
         auto comm_yarp_image = comm_image_subscriber_.bottle();
         if(comm_yarp_image.width() <= 0||comm_yarp_image.height() <= 0)
         {
-            std::cerr << "Received YARP image for comm is not valid!" << std::endl;
+//            std::cerr << "Received YARP image for comm is not valid!" << std::endl;
             comm_label_.setPixmap(QPixmap::fromImage(white_image).scaled(width_, height_));
         }
         else
@@ -254,7 +254,7 @@ namespace matb
         auto sched_yarp_image = sched_image_subscriber_.bottle();
         if(sched_yarp_image.width() <= 0||sched_yarp_image.height() <= 0)
         {
-            std::cerr << "Received YARP image for sched is not valid!" << std::endl;
+//            std::cerr << "Received YARP image for sched is not valid!" << std::endl;
             sched_label_.setPixmap(QPixmap::fromImage(white_image).scaled(width_, height_));
         }
         else

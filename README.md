@@ -14,12 +14,26 @@ YARP(Yet Another Robot Platform)
 
 https://github.com/robotology/yarp
 
-
 icub-main is needed to use joystickCtrl.
 
 icub-main
 
 https://github.com/robotology/icub-main/tree/39a7e037e3d5dbdf94cdbd4046bd8c9a8cfb666d
+
+#
+###To launch MATB-YARP
+In order to launch MATB-YARP, you need to execute Matb, MatbViewer, joystichCtrl and yarpdev and connect the necessary signals.
+To execute these in a simple way, you can use the yarp manager with an xml file.
+
+e.g. https://github.com/motonobu-aoki/matb-yarp/blob/main/app/yarp_manager/matb.xml
+#
+###To start the MATB-YARP
+MATB starts by pressing "s" on the keyboard while the MATB Viewer window is active.
+
+
+
+
+
 
 #
 ###Edit MATB events
