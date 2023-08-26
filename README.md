@@ -5,20 +5,24 @@ Multi Attribute Task Battery for YARP.
 MATB-YARP includes system monitoring task, tracking task, communications task, and resource management task. The basic structure is the same as MATB.
 In conjunction with YARP, data can be recorded on MATB performance performed by participants with various external signals, such as the iCub.
 #
-MATB(Multi attribute task battery)
+##### MATB(Multi attribute task battery)
 
 https://matb.larc.nasa.gov/
 
-YARP(Yet Another Robot Platform)
-
+##### YARP(Yet Another Robot Platform)
 
 https://github.com/robotology/yarp
 
-icub-main is needed to use joystickCtrl.
+Also, "icub-main" is needed to use joystickCtrl.
 
-icub-main
+##### icub-main
 
-https://github.com/robotology/icub-main/tree/39a7e037e3d5dbdf94cdbd4046bd8c9a8cfb666d
+https://github.com/robotology/icub-main
+
+To compile joystickCtrl in icub-main, you need to install "libsdl1.2-dev".
+````
+sudo apt install libsdl1.2-dev
+````
 
 #
 ###To launch MATB-YARP
