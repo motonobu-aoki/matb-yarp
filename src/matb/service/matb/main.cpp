@@ -1,6 +1,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <matb/module/matb_module/matb_module.hpp>
+#include <filesystem>
 
 int main(int argc, char* argv[])
 {
@@ -16,10 +17,14 @@ int main(int argc, char* argv[])
     rf.setDefault("comm", "true");
     rf.setDefault("sched", "true");
     rf.setDefault("frequency", "30");
-    std::string matb_path = getenv("ICUBcontrib_DIR");
-    matb_path = matb_path + "/share/matb/json/matb_experiment.json";
-    std::cout << matb_path << std::endl;
-    rf.setDefault("matb_path", matb_path);
+
+    std::filesystem::path current_file_path(__FILE__);
+    std::filesystem::path current_directory = current_file_path.parent_path();
+
+    std::string event_json_file = current_directory.string() + "/../../../../app/matb/json/matb_experiment.json";
+    std::cout << "Loads the following event file:" << std::endl;
+    std::cout << event_json_file << std::endl;
+    rf.setDefault("event_json_file", event_json_file);
     rf.configure(argc, argv);
     rf.setVerbose(true);
 
@@ -29,7 +34,6 @@ int main(int argc, char* argv[])
     }
 
     std::cout << "Main returning..." << std::endl;
-    //   return module.runModule( rf );
     return 0;
 }
 

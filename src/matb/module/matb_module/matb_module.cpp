@@ -9,11 +9,9 @@ namespace matb
         sched_ = _rf.find("sched").asBool();
         sysmon_ = _rf.find("sysmon").asBool();
         track_ = _rf.find("track").asBool();
-        condition_ = _rf.find("condition").asString();
-        matb_path_ = _rf.find("matb_path").asString();
 
         MatbEventServer::init();
-        MatbEventServer::parseMatbEventByJSON(_rf.find("matb_path").asString());
+        MatbEventServer::parseMatbEventByJSON(_rf.find("event_json_file").asString());
         events_ = MatbEventServer::system_events();
         key_press_event_subscriber_port.useCallback(key_press_event_subscriber);
         key_press_event_subscriber_port.setReplier(key_press_event_subscriber);
